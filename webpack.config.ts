@@ -10,7 +10,10 @@ export default {
         filename: '[name].js'
     },
     resolve: {
-        extensions: ['.ts', '.tsx', '.vue', '.ts']
+        extensions: ['.ts', '.tsx', '.vue', '.js']
+    },
+    devServer: {
+        port: 8888
     },
     plugins: [
         new CleanWebpackPlugin(),
