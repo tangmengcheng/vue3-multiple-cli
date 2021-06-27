@@ -16,3 +16,8 @@ npm install webpack webpack-cli -D
 ~~~sh
 npm install clean-webpack-plugin -D
 ~~~
+
+~~~sh
+npm install html-webpack-plugin -D
+npx tsc --init 初始化tsconfig.json文件
+~~~

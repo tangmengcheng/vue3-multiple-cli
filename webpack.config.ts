@@ -1,5 +1,6 @@
 import { join } from 'path'
 import { CleanWebpackPlugin } from 'clean-webpack-plugin'
+import HtmlWebpackPlugin from 'html-webpack-plugin'
 
 export default {
     mode: 'development',
@@ -12,6 +13,10 @@ export default {
         extensions: ['.ts', '.tsx', '.vue', '.ts']
     },
     plugins: [
-        new CleanWebpackPlugin()
+        new CleanWebpackPlugin(),
+        new HtmlWebpackPlugin({
+            title: 'Vue3多页环境',
+            template: './src/index.html'
+        })
     ]
 }
