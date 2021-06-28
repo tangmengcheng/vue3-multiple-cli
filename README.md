@@ -64,3 +64,10 @@ new webpack.DefinePlugin({
     '__VUE_PROD_DEVTOOLS__': false
 }),
 ```
+
+<!-- 处理sass和图片 -->
+
+```sh
+npm install sass sass-loader -D
+注意：vue-style-loader 和 style-loader的区别
+```
