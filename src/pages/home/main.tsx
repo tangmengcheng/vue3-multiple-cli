@@ -1,6 +1,6 @@
 import { defineComponent } from 'vue'
 import './index.sass'
-import img from './assets/images/logo.png'
+import img from '../../assets/images/logo.png'
 export default defineComponent({
     name: 'Home',
     setup() {
@@ -8,6 +8,7 @@ export default defineComponent({
             return (
                 <div class='home'>
                     <h1 class='title'>home hello</h1>
+                    <a href="./about.html">去about</a>
                     <div class="image-box"></div>
                     {/* <img src="./assets/images/logo.png" /> */}
                     <img src={img} />

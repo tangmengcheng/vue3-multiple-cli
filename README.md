@@ -87,3 +87,18 @@ npm install sass sass-loader -D
 第一种情况：网络问题 第二种情况：代理问题 git config --global --unset http.proxy
 如果是https设置为 git config --global --unset https.proxy
 ```
+
+<!-- 多页配置 -->
+
+```html
+注意：多页配置后想直接打开页面，需改home.html -> index.html OR devServer:
+{index: home.html} Failed to mount app: mount target selector "#app" or "#about"
+returned null. 需要加chunks: ['about']
+```
+
+```sh
+npm i glob -D
+
+"build": "webpack --config build/webpack.config.ts"
+path: join(__dirname, '../dist')
+```
