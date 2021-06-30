@@ -1,6 +1,6 @@
 <template>
-    <div >
-        home <h1>{{title}}</h1>
+    <div class="home">
+        home <h1 class="title">{{title}}</h1>
     </div>
 </template>
 <script>
@@ -17,3 +17,6 @@ export default defineComponent({
     },
 })
 </script>
+<style lang="sass" scoped src="./index.sass">
+
+</style>

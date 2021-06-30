@@ -71,3 +71,13 @@ new webpack.DefinePlugin({
 npm install sass sass-loader -D
 注意：vue-style-loader 和 style-loader的区别
 ```
+
+```sh
+# 处理图片
+1. css图片
+2. .vue文件 img标签
+<img src="./assets/images/logo.png" /> 这种方式是不行的，打包没有这个目录；需要import导入图片 import img from './assets/images/logo.png'
+3. html文件
+```
+
+- 类型申明文件
