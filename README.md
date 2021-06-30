@@ -81,3 +81,9 @@ npm install sass sass-loader -D
 ```
 
 - 类型申明文件
+
+```html
+解决：OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443
+第一种情况：网络问题 第二种情况：代理问题 git config --global --unset http.proxy
+如果是https设置为 git config --global --unset https.proxy
+```
