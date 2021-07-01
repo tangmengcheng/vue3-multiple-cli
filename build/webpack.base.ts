@@ -42,11 +42,16 @@ export default {
                 ]
             },
             {
-                test: /\.(scss|sass)$/,
+                test: /\.s[ac]ss$/i,
                 use: [
-                    'vue-style-loader',
+                    'style-loader',
                     'css-loader',
-                    'sass-loader'
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                            implementation: require('sass')
+                        }
+                    }
                 ]
             },
             {

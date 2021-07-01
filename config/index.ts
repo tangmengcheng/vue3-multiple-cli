@@ -1,4 +1,4 @@
-import { merge } from 'webpack-merge'
+const { merge } = require('webpack-merge')
 import baseConfig from '../build/webpack.base'
 import devConfig from '../build/webpack.base'
 import proConfig from '../build/webpack.base'

@@ -110,3 +110,7 @@ npm install webpack-merge -D
 
 Syntax Error: SassError: Expected newline.错误解决
 sass -> scss
+
+提取 CSS
+废弃了 extract-text-webpack-plugin
+npm install --save-dev mini-css-extract-plugin
