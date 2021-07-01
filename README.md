@@ -103,3 +103,10 @@ npm i glob -D
 path: join(__dirname, '../dist')
 111
 ```
+
+<!-- 区分环境变量
+npm install webpack-merge -D
+ -->
+
+Syntax Error: SassError: Expected newline.错误解决
+sass -> scss
