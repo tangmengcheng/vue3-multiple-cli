@@ -114,3 +114,5 @@ sass -> scss
 提取 CSS
 废弃了 extract-text-webpack-plugin
 npm install --save-dev mini-css-extract-plugin
+
+yarn add copy-webpack-plugin @types/copy-webpack-plugin -D

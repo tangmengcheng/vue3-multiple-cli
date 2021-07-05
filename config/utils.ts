@@ -1,5 +1,7 @@
 import HtmlWebpackPlugin from "html-webpack-plugin"
 import { glob } from 'glob'
+const { join } = require('path')
+
 
 export function generatePageList(): HtmlWebpackPlugin[] {
     try {
@@ -11,7 +13,8 @@ export function generatePageList(): HtmlWebpackPlugin[] {
                     title: name,
                     template: `./${item}/index.html`,
                     filename: `${name}.html`,
-                    chunks: [name!]
+                    chunks: [name!],
+                    favicon: join(__dirname, '../public/logo.png')
                 })
             })
         }

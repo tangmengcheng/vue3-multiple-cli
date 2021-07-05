@@ -1,10 +1,16 @@
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+// const CopyPlugin = require('copy-webpack-plugin')
 module.exports = {
     mode: 'production',
     output: {
-        filename: '[name].[chunkHash:8].js'
+        filename: '[name].[chunkhash:8].js'
     },
     plugins: [
-        new CleanWebpackPlugin()
+        new CleanWebpackPlugin(),
+        // new CopyPlugin({
+        //     patterns: [
+        //         { from: 'public', to: 'public' }
+        //     ]
+        // })
     ]
 }

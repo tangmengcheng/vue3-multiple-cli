@@ -1,7 +1,7 @@
 module.exports =  {
     mode: 'development',
     devServer: {
-        port: 8888,
+        port: 9999,
         index: 'home.html' // 以它默认为主页
     }
 }
