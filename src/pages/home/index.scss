@@ -1,0 +1,13 @@
+.home {
+    .title {
+         color: blue;
+         .image-box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid;
+            background-image: url("../../assets/images/logo.png");
+            background-size: contain;
+        }
+    }
+}
+        
