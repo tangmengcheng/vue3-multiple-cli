@@ -1,5 +1,5 @@
 import { defineComponent } from 'vue'
-import './index.scss'
+import './index.sass'
 import img from '../../assets/images/logo.png'
 export default defineComponent({
     name: 'Home',

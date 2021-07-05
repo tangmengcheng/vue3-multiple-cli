@@ -1,9 +1,9 @@
-import { join } from 'path'
-import { VueLoaderPlugin } from 'vue-loader'
-import webpack from 'webpack'
-import { generatePageList } from '../config/utils'
+const { join } = require('path')
+const { VueLoaderPlugin } = require('vue-loader')
+const webpack = require('webpack')
+const { generatePageList } = require('../config/utils')
 
-export default {
+module.exports = {
     entry: {
         home: './src/pages/home/index.ts',
         about: './src/pages/about/index.ts'

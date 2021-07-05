@@ -1,8 +1,8 @@
 const { merge } = require('webpack-merge')
-import baseConfig from '../build/webpack.base'
-import devConfig from '../build/webpack.base'
-import proConfig from '../build/webpack.base'
-export default (env: Record<string, boolean | boolean | number>) => {
+const baseConfig = require('../build/webpack.base')
+const devConfig = require('../build/webpack.dev')
+const proConfig = require('../build/webpack.pro')
+module.exports = (env: Record<string, boolean | boolean | number>) => {
     console.log(env)
     const isProd = env.production === true
     if(isProd) {

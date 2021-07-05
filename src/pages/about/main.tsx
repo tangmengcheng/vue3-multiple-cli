@@ -1,5 +1,5 @@
 import { defineComponent } from 'vue'
-import './index.scss'
+import './index.sass'
 export default defineComponent({
     name: 'About',
     setup() {

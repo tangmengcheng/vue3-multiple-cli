@@ -1,5 +1,5 @@
-import { CleanWebpackPlugin } from 'clean-webpack-plugin'
-export default {
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+module.exports = {
     mode: 'production',
     output: {
         filename: '[name].[chunkHash:8].js'
