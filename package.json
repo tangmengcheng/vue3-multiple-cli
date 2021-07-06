@@ -1,5 +1,5 @@
 {
-  "name": "vue3-multiple-cli",
+  "name": "{{projectName}}",
   "version": "1.0.0",
   "description": "Vue3-multiple-cli",
   "main": "index.js",
